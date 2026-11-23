@@ -1,91 +1,89 @@
 # Changelog
 
-What shipped, by day, from 2026-11-11 to 2026-11-22: 212 shipped entries in the release log. Areas are grouped by keyword and are approximate.
+What shipped, by day, from 2026-11-12 to 2026-11-23: 179 releases recorded as shipped in the release log, each counted once on the day it first shipped. Areas are grouped by keyword and are approximate.
 
-## 2026-11-22: 19 shipped
-- Sports models and daily slates: 9
-- Internal tooling and release safety: 8
-- Member product: 1
-- Odds and markets data: 1
+## 2026-11-23: 2 shipped
+- Internal tooling and release safety: 2
 
-## 2026-11-21: 10 shipped
+## 2026-11-22: 13 shipped
 - Internal tooling and release safety: 6
-- Sports models and daily slates: 3
+- Sports models and daily slates: 5
+- Odds and markets data: 1
 - Member product: 1
 
-## 2026-11-20: 8 shipped
-- Platform and infrastructure: 3
+## 2026-11-21: 5 shipped
+- Internal tooling and release safety: 3
+- Member product: 1
+- Sports models and daily slates: 1
+
+## 2026-11-20: 7 shipped
 - Odds and markets data: 3
+- Platform and infrastructure: 2
 - Sports models and daily slates: 1
 - Internal tooling and release safety: 1
 
-## 2026-11-19: 17 shipped
-- Internal tooling and release safety: 10
+## 2026-11-19: 16 shipped
+- Internal tooling and release safety: 9
 - Member product: 5
 - Sports models and daily slates: 2
 
-## 2026-11-18: 6 shipped
+## 2026-11-18: 4 shipped
 - Odds and markets data: 2
-- Internal tooling and release safety: 2
 - Member product: 1
 - Sports models and daily slates: 1
 
-## 2026-11-17: 13 shipped
+## 2026-11-17: 12 shipped
 - Sports models and daily slates: 5
 - Internal tooling and release safety: 5
 - Member product: 2
-- Platform and infrastructure: 1
 
 ## 2026-11-16: 26 shipped
 - Internal tooling and release safety: 16
 - Sports models and daily slates: 8
 - Platform and infrastructure: 2
 
-## 2026-11-15: 53 shipped
-- Sports models and daily slates: 22
+## 2026-11-15: 50 shipped
+- Sports models and daily slates: 21
 - Internal tooling and release safety: 19
-- Member product: 6
 - Platform and infrastructure: 5
+- Member product: 4
 - Odds and markets data: 1
 
-## 2026-11-14: 14 shipped
+## 2026-11-14: 13 shipped
 - Sports models and daily slates: 8
-- Internal tooling and release safety: 5
+- Internal tooling and release safety: 4
 - Platform and infrastructure: 1
 
-## 2026-11-13: 21 shipped
-- Sports models and daily slates: 10
-- Internal tooling and release safety: 6
+## 2026-11-13: 15 shipped
+- Sports models and daily slates: 5
+- Internal tooling and release safety: 5
 - Member product: 3
 - Platform and infrastructure: 2
 
-## 2026-11-12: 23 shipped
-- Sports models and daily slates: 17
-- Internal tooling and release safety: 5
-- Member product: 1
-
-## 2026-11-11: 2 shipped
-- Member product: 1
+## 2026-11-12: 16 shipped
+- Sports models and daily slates: 12
+- Member product: 2
+- Platform and infrastructure: 1
 - Internal tooling and release safety: 1
 
 ## Totals by area
-- Sports models and daily slates: 86
-- Internal tooling and release safety: 84
-- Member product: 21
-- Platform and infrastructure: 14
+- Internal tooling and release safety: 71
+- Sports models and daily slates: 69
+- Member product: 19
+- Platform and infrastructure: 13
 - Odds and markets data: 7
 
 ## Development activity, 2026-09-01 to 2026-11-22
 
-Commits per day across the company's code repositories: 8831 commits on 76 days. These are counts of commits, not shipped releases; shipped entries are listed above from 2026-11-11.
+Commits per day across the company's code repositories: 8912 commits on 76 days. These are counts of commits, not shipped releases; shipped releases are listed above from 2026-11-12.
 
 ### By month
-- 2026-09: 2667
+- 2026-09: 2746
 - 2026-10: 5284
-- 2026-11: 880
+- 2026-11: 882
 
 ### By day
-- 2026-11-22: 16
+- 2026-11-22: 18
 - 2026-11-21: 3
 - 2026-11-20: 10
 - 2026-11-19: 34
@@ -160,4 +158,4 @@ Commits per day across the company's code repositories: 8831 commits on 76 days.
 - 2026-09-04: 94
 - 2026-09-03: 114
 - 2026-09-02: 73
-- 2026-09-01: 33
+- 2026-09-01: 112
