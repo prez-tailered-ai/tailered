@@ -8,6 +8,7 @@ This repository is public. Work is added here after each part is cleared for pub
 
 - `skills/`: 136 top-level agent skills, each in its own folder with a `SKILL.md` (205 `SKILL.md` files in all, counting nested skills). Start at `skills/INDEX.md`. Examples use neutral names (the company, the owner, a partner market).
 - `skills/NOTICE.md`: where each adapted skill came from and its license.
+- `references/conventions.md`: shared meanings the skills point to.
 - `skills/references/nvidia-import/`: the license texts for the NVIDIA-authored skills under `skills/nvidia/`.
 - `secret-scan/`, `redact/`, `trace/`, `snapshot-files/`: small tools, each with tests (`node --test`).
 - `CHANGELOG.md`: what shipped, by day, and commits per day since 2026-09-01.

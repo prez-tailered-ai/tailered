@@ -89,7 +89,7 @@ Completion: the report lists candidates with the item ids that justify them, or 
 
 ## In the workflow
 
-Parallel Build and Prove work in `tailered-ai:workflow`: give each agent disjoint files and its own temp folder, merge results in a fixed order (the day-build runner's `JOBS` pattern), and run reviewers and council voices as separate fresh subagents whose verdicts are saved as files. Review passes: `tailered-ai:lockin` (review, audit).
+Parallel Build and Prove work in `tailered-ai:workflow`: give each agent disjoint files and its own temp folder, merge results in a fixed order (a fixed job list), and run reviewers and council voices as separate fresh subagents whose verdicts are saved as files. Review passes: `tailered-ai:lockin` (review, audit).
 
 ## Anti-Patterns
 

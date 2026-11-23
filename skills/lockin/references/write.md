@@ -194,7 +194,7 @@ Address only the failures you saw. Use this house format:
 - `## Anti-Patterns`.
 - `## Source and adaptation`: where it came from, the source SHA256, the license, and what you changed.
 
-New skills live in `skills/<name>/` and must pass `node skills/workflow/scripts/check-skills.mjs` and `python3 -I tools/check-helper-calls.py`. Heavy reference (100+ lines) and reusable tools go in separate files; keep principles and short patterns inline. Call bundled scripts through their interpreter (`node scripts/x.js`, `bash scripts/x.sh`), never by bare path. One good runnable example beats five weak ones, in one language. Point to other skills by name (`tailered-ai:<name>`), never with an `@` file link, which loads the file at once.
+New skills live in `skills/<name>/` and must pass the repository skill checks. Heavy reference (100+ lines) and reusable tools go in separate files; keep principles and short patterns inline. Call bundled scripts through their interpreter (`node scripts/x.js`, `bash scripts/x.sh`), never by bare path. One good runnable example beats five weak ones, in one language. Point to other skills by name (`tailered-ai:<name>`), never with an `@` file link, which loads the file at once.
 
 Completion: the skill has all six house parts, the description contains only triggers, both checks pass, and agents comply when the scenarios are rerun with the skill.
 

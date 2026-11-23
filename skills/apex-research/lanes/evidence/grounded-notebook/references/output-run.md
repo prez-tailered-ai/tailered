@@ -4,7 +4,7 @@ Detail for steps O1 to O3 of grounded-notebook. The hosted client's own help out
 
 ## Run envelope (O1)
 
-Record before any external effect (`../../../references/conventions.md`, Bounded execution): outputs wanted, sources, the longest wait per step, total elapsed time, retries (default none), and the authorised actions.
+Record before any external effect (`../../../../../../references/conventions.md`, Bounded execution): outputs wanted, sources, the longest wait per step, total elapsed time, retries (default none), and the authorised actions.
 
 A request for a finished output authorises its own source uploads, readiness waits, generation and the named output file. These need the user's word first:
 - deletion of a workspace, source, note, output, label or profile; sharing changes; sign-out; clearing history; starting a fresh conversation that drops context;

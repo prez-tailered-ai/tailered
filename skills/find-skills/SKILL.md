@@ -151,6 +151,6 @@ npx skills init my-xyz-skill
 
 ## Done means
 
-Each item names the text that must appear in the transcript before this skill counts as done (checked by `tools/change_checks.py done`).
+Each item names the text that must appear in the transcript before this skill counts as done.
 
 - Skills CLI searched: `npx skills find`

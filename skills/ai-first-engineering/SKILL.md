@@ -85,7 +85,7 @@ Completion: the document carries the release-authority pointer, and the owner ha
 
 ## In the workflow
 
-In `tailered-ai:workflow`, a rule or speedup counts only once it lives in a script with a self-test (`skills/workflow/scripts/check-release.mjs`, `bench.mjs`, `check-skills.mjs`). Gates run through `tailered-ai:lockin` verify; dead code goes through `tailered-ai:refactor-clean`; behavior-neutral restructures through `tailered-ai:orch-refine-code`; lean defaults from `tailered-ai:lockin`.
+In `tailered-ai:workflow`, a rule or speedup counts only once it lives in a script with a self-test. Gates run through `tailered-ai:lockin` verify; dead code goes through `tailered-ai:refactor-clean`; behavior-neutral restructures through `tailered-ai:orch-refine-code`; lean defaults from `tailered-ai:lockin`.
 
 ## Anti-Patterns
 

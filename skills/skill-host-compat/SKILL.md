@@ -112,6 +112,6 @@ every `skills/` entry to have a Cursor copy.
 
 ## Done means
 
-Each item names the text that must appear in the transcript before this skill counts as done (checked by `tools/change_checks.py done`).
+Each item names the text that must appear in the transcript before this skill counts as done.
 
 - Host compatibility validator run: `validate-skill-host-compat.js`

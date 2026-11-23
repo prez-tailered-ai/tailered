@@ -151,6 +151,6 @@ release-note variant, or create a fresh skill.
 
 ## Done means
 
-Each item names the text that must appear in the transcript before this skill counts as done (checked by `tools/change_checks.py done`).
+Each item names the text that must appear in the transcript before this skill counts as done.
 
 - Search ran before recommending: `skill-scout`

@@ -44,7 +44,7 @@ Completion: four written answers plus the nearest sibling and why the new skill 
 
 Follow `skills/agentic-os/SKILL.md` section by section: frontmatter (`name`, `description` with what, when and "Not for ...; use <skill>", `license`), title, kept-concepts paragraph, the When to Activate section with "Do not use for:" routes, Inputs and outputs, Steps each ending in a checkable `Completion:`, Anti-Patterns, and Source and adaptation. Put every "when to use" in the description. Explain why each rule exists in plain English. Move bulk into `references/` and `scripts/` and point to them by relative path.
 
-Completion: `python3 -I tools/check-helper-calls.py` prints `ok: every helper call resolves`, and `node skills/workflow/scripts/check-skills.mjs` exits 0 (a checker another agent maintains; if it is missing or fails, report its exact output and stop).
+Completion: the repository skill checks exit 0.
 
 ### 3. Write test prompts and a baseline
 
@@ -102,5 +102,5 @@ Source: `skill-creator` from Anthropic's skills. SHA256 of the source entrypoint
 
 - Copied the whole folder (18 files) with `cp -RL`: scripts, agents, references, eval viewer and assets are unchanged and called by relative path.
 - Rewrote SKILL.md into the house format and cut it from 485 to under 130 lines; removed the Claude.ai-only and Cowork sections and the `present_files` or `SendUserFile` packaging step, which cannot be verified here.
-- Added the Tailered checks (`check-helper-calls.py`, `check-skills.mjs`), the workflow Prove and Release path, a required negative prompt, a bounded round cap and a spend note for the description loop.
+- Added the Tailered checks, the workflow Prove and Release path, a required negative prompt, a bounded round cap and a spend note for the description loop.
 - Grep of the copied files found no `anthropic-skills`, `ecc:` or `superpowers:` names. `scripts/run_eval.py` writes and then removes a temporary command file in the project's `.claude/commands/` and runs `claude -p`, so the description loop needs Claude Code and runs from a project root; kept as is and noted here. `package_skill.py` and `quick_validate.py` mention claude.ai upload rules (flat folder, name and description limits); kept as they only validate structure, and the Tailered package is not built with `package_skill.py`.

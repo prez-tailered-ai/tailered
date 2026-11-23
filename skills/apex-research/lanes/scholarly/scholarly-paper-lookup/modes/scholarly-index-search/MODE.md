@@ -5,7 +5,7 @@ description: Query one public scholarly index at a time, either a preprint feed 
 
 # Scholarly index search
 
-One retrieval primitive, two index rows. Pick the row, make few calls, check every response, and show the identifier first, because every later citation needs it. Shared rules: `../../references/conventions.md`.
+One retrieval primitive, two index rows. Pick the row, make few calls, check every response, and show the identifier first, because every later citation needs it. Shared rules: `../../../../../../../references/conventions.md`.
 
 ## When to Activate
 

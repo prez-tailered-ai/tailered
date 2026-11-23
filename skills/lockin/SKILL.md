@@ -115,7 +115,7 @@ Merged from six Tailered AI skills that adapted the ponytail plugin 5.3.2 (MIT, 
 
 ## Done means
 
-Each item names the text that must appear in the transcript before this skill counts as done (checked by `tools/change_checks.py done`).
+Each item names the text that must appear in the transcript before this skill counts as done.
 
 - Opener stated while lock is active: `Locked in.`
 - Plain restatement after the footer: `---`

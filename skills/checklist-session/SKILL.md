@@ -91,7 +91,7 @@ Completion: the session's close record carries its context packet's path and pac
 
 ## Done means
 
-Each item names the text that must appear in the transcript before this skill counts as done (checked by `tools/change_checks.py done`).
+Each item names the text that must appear in the transcript before this skill counts as done.
 
 - Checked items marked: `[x]`
 - Open items marked: `[ ]`
