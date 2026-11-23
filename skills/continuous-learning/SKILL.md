@@ -28,7 +28,7 @@ Do not use for:
 
 ## Inputs and outputs
 
-Inputs: what happened (the correction, failure or repeated step), where the proof is (a file path, command output, ledger line), and the scope. The existing store is `${XDG_DATA_HOME:-~/.local/share}/tailered-workflow/`: `lessons.jsonl` (written by `check-release.mjs`, rotates at 1 MiB to `lessons.1.jsonl`), `variants.jsonl`, and this skill's `instincts.jsonl`. These are separate logs with different record shapes; `lessons.mjs status` reports all three. Automation: only the daily learning task runs unattended; capturing an instinct is a manual `lessons.mjs add`. If a file is missing, report it and continue with the others.
+Inputs: what happened (the correction, failure or repeated step), where the proof is (a file path, command output, ledger line), and the scope. The existing store is `${XDG_DATA_HOME:-~/.local/share}/tailered-workflow/`: `lessons.jsonl` (written by the release check of the workflow skill, rotates at 1 MiB to `lessons.1.jsonl`), `variants.jsonl`, and this skill's `instincts.jsonl`. These are separate logs with different record shapes; `lessons.mjs status` reports all three. Automation: only the daily learning task runs unattended; capturing an instinct is a manual `lessons.mjs add`. If a file is missing, report it and continue with the others.
 
 Output: appended lesson lines, a ranked status, and, when promoted, a skill edit that passed workflow Prove.
 
@@ -60,9 +60,9 @@ Completion: `status` shows the lower value for that trigger and the evidence lin
 
 ### 5. Promote through workflow Prove
 
-A lesson may change a skill only at 0.8 or higher, with evidence from two or more separate sessions or runs. Make the smallest skill edit, then follow `tailered-ai:workflow` Prove: fixture prompts and `node scripts/bench.mjs` must still pass. The edit is local until the workflow Release phase and the owner's word.
+A lesson may change a skill only at 0.8 or higher, with evidence from two or more separate sessions or runs. Make the smallest skill edit, then follow `tailered-ai:workflow` Prove: fixture prompts and that phase's benchmark must still pass. The edit is local until the workflow Release phase and the owner's word.
 
-Completion: the bench output shows it still passes and the edit is a named file diff; otherwise the lesson stays a lesson.
+Completion: the benchmark output shows it still passes and the edit is a named file diff; otherwise the lesson stays a lesson.
 
 ### 6. Report
 
