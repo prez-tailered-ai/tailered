@@ -1,0 +1,36 @@
+{
+ "skill_name": "saturday-close-review",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "How did the model do last week against the closing lines? Give me the Saturday numbers.",
+   "expected_output": "A weekly close review with a per-league table.",
+   "expectations": [
+    "Leads with a per-league table of games graded, share that beat the close and average gap",
+    "Names a fixed weekly slot and an owner",
+    "Marks each league keep, watch or change with the number behind it",
+    "Changes nothing live and routes any change through the release coordinator on the owner's word"
+   ]
+  },
+  {
+   "id": 2,
+   "prompt": "We skipped the weekly review because NHL had a bad week. Can we just look at it next month?",
+   "expected_output": "Keeps the fixed slot and reviews the bad week now.",
+   "expectations": [
+    "Keeps the review in its fixed weekly slot rather than moving it",
+    "Grades NHL projections against the closing line, not win rate alone",
+    "Flags any league with too few graded games to judge",
+    "Gives each change one action, an owner and a date"
+   ]
+  },
+  {
+   "id": 3,
+   "prompt": "Research why our NBA totals are biased high and what to change in the model.",
+   "expected_output": "Must not use this skill.",
+   "expectations": [
+    "The skill does not trigger"
+   ],
+   "negative": true
+  }
+ ]
+}

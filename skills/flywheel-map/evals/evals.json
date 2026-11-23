@@ -1,0 +1,5 @@
+{"skill_name":"flywheel-map","evals":[
+{"id": 1, "prompt": "Draw the company's flywheel and tell me where to put effort next month.", "expected_output": "A loop with numbered links and one input to push.", "expectations": ["Draws a closed loop of four to six links", "Gives each link a measured number or marks it a guess", "Picks one controllable input to push, not an output like revenue", "Names the weakest link"]},
+{"id": 2, "prompt": "Would cutting our price to $10 a month spin the flywheel?", "expected_output": "Tests the price link with numbers and names the margin risk.", "expectations": ["Checks whether a lower price actually brings members, with data or marked guess", "Names the cost: revenue per member and margin", "Says what number would prove or disprove the link", "Does not assume the loop spins"]},
+{"id": 3, "prompt": "Make a chart of last week's closing-line value by league.", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

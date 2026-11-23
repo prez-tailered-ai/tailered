@@ -1,0 +1,5 @@
+{"skill_name":"single-threaded-owner","evals":[
+{"id": 1, "prompt": "Three sessions are each doing a bit of the NBA model's injury data work. How should we organize it?", "expected_output": "One owner for the thread, others stop.", "expectations": ["Names a single owner whose only thread is this", "Says what the other sessions stop doing", "Records the owner where everyone looks, such as the shared queue", "Says what the owner hands others: an interface or output"]},
+{"id": 2, "prompt": "Who should own the partner market integration?", "expected_output": "One named owner with one job.", "expectations": ["Picks or asks for exactly one owner", "Says what that owner drops to take it", "Defines the outcome the owner is answerable for", "Avoids a committee or shared ownership"]},
+{"id": 3, "prompt": "Send five helpers to research the best NBA injury data vendors in parallel.", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

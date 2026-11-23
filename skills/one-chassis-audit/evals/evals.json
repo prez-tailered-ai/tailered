@@ -1,0 +1,5 @@
+{"skill_name":"one-chassis-audit","evals":[
+{"id":1,"prompt":"Every slate we copy a new stage and publish script for the date and league. Could the NHL and NFL draft pipelines share one chassis? Compare them and tell me what has to stay different.","expected_output":"A comparison table with shared, justified and removable marks and a review date.","expectations":["Runs the comparison on labeled folders","Gives a reason for each kept difference","Sets a review date and names a comparison","Changes no file"]},
+{"id":2,"prompt":"Why do we have stage-20260102.mjs and stage-20260101.mjs? Standardize that into one script plan, don't touch anything yet.","expected_output":"A report on what differs and whether one script is enough.","expectations":["Compares the two by content ignoring dates","Makes a recommendation without editing"]},
+{"id":3,"prompt":"Delete the dead helpers in the main product day-build scripts, one at a time with tests green.","expected_output":"Must not use this skill; refactor-clean covers it.","expectations":["The skill does not trigger"],"negative":true}
+]}

@@ -1,0 +1,35 @@
+{
+ "skill_name": "creator-share-floor",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "What revenue share should we give Creator A on the creator marketplace? Assume 100 subscribers at $30, about $5 a sub to run, we'd start at 20 percent. Creator A could make about $1,200 a month going alone. If Creator A left we'd lose half those subs for 6 months and $500 in rework.",
+   "expected_output": "A 40 percent floor, $600 a month extra, $6,200 departure cost, about 9.7 percent break-even.",
+   "expectations": [
+    "Gives a 40 percent floor",
+    "Gives $600 extra per month",
+    "Gives $6,200 departure cost",
+    "Marks the inputs as assumptions, with the owner's word as the reason",
+    "Sends nothing and leaves the decision to the owner"
+   ]
+  },
+  {
+   "id": 2,
+   "prompt": "Should we require creators to avoid gambling content on their personal socials as a condition of their share?",
+   "expected_output": "Pushes back on private conduct conditions; terms cover the work.",
+   "expectations": [
+    "Rejects or questions conditions unrelated to the model's work",
+    "Explains why"
+   ]
+  },
+  {
+   "id": 3,
+   "prompt": "What should the monthly member price for the main product be?",
+   "expected_output": "Must not use this skill.",
+   "expectations": [
+    "The skill does not trigger"
+   ],
+   "negative": true
+  }
+ ]
+}

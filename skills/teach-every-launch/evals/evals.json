@@ -1,0 +1,5 @@
+{"skill_name":"teach-every-launch","evals":[
+{"id": 1, "prompt": "NBA season starts Tuesday. Write a launch post explaining how our projected totals work.", "expected_output": "A one-lesson explainer with a worked example and a source for every number.", "expectations": ["States one lesson in one sentence", "Uses a worked example from a real game", "Gives every number a source, date range and sample size, cutting any it cannot source", "Leaves publishing to the owner through tailered-ai:workflow and the release coordinator"]},
+{"id": 2, "prompt": "Post that our model went 58% against the closing line this month.", "expected_output": "Sources the number and says what drove it before any post.", "expectations": ["Asks for or gives the date range, sample size and source of 58%", "Says what drove the result, such as one league or a short stretch", "Posts nothing and drafts for the owner", "Ends with publish, change or stop"]},
+{"id": 3, "prompt": "Set up a public contest with frozen, hashed entries to prove the model before launch.", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

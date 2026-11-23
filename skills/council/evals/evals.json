@@ -1,0 +1,36 @@
+{
+ "skill_name": "council",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Deep council: should the company move the main product from its current host to a new cloud provider this month? The current box costs about 40 euros a month. Someone said the cloud provider would be cheaper at our scale. The team is one founder plus agents. Give me a confidence percentage at the end.",
+   "expected_output": "Evidence brief, author position, three independent helper voices (deep), synthesis.",
+   "expectations": [
+    "An evidence brief before the voices with given, verified, assumed, unknown and value groups",
+    "The author's position is written before the voices",
+    "Deep mode: three helper voices that saw only the question and the brief",
+    "Synthesis shows the strongest dissent and says whether the council changed the recommendation",
+    "The percentage follows the confidence rule: facts tagged, and with no verified fact, 'No percentage: nothing here is verified' plus the check",
+    "A council ledger line and a confidence ledger line were appended"
+   ]
+  },
+  {
+   "id": 3,
+   "prompt": "Go/no-go: turn on the new odds alert for all members tonight? It was tested on two accounts.",
+   "expected_output": "Deep council (go/no-go on a release); recommendation only, release stays with the owner.",
+   "expectations": [
+    "Runs in deep mode",
+    "Leaves the release decision with the owner and the release coordinator"
+   ]
+  },
+  {
+   "id": 2,
+   "prompt": "What is the capital of Australia?",
+   "expected_output": "Must not convene a council.",
+   "expectations": [
+    "The skill does not trigger"
+   ],
+   "negative": true
+  }
+ ]
+}

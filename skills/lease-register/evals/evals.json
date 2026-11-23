@@ -1,0 +1,36 @@
+{
+ "skill_name": "lease-register",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Check our leases: what feeds, hosts and domains could be taken from us, and when do they renew?",
+   "expected_output": "A register with renewal dates and fallbacks.",
+   "expectations": [
+    "Lists odds feeds, prediction-market data, cloud hosting, DNS and domains as rows",
+    "Gives each row can-end, notice days and a renewal date, sourced or marked proposal",
+    "Names a fallback and switch days for each lease that can be ended",
+    "Gives keep, add fallback, own or renegotiate per row and cancels or moves nothing"
+   ]
+  },
+  {
+   "id": 2,
+   "prompt": "We want to build the NHL capture on a new free odds API. Anything to check first?",
+   "expected_output": "A lease check before building on it.",
+   "expectations": [
+    "Adds the free API as a lease row with its end and repricing terms",
+    "Asks what stops if it ended tomorrow and names a fallback",
+    "Rates it covered, thin or none",
+    "Routes any switch through workflow and the release coordinator on the owner's word"
+   ]
+  },
+  {
+   "id": 3,
+   "prompt": "Our odds feed froze three times last month. Should we bring it in-house?",
+   "expected_output": "Must not use this skill.",
+   "expectations": [
+    "The skill does not trigger"
+   ],
+   "negative": true
+  }
+ ]
+}

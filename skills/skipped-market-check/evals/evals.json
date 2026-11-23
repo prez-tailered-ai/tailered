@@ -1,0 +1,36 @@
+{
+ "skill_name": "skipped-market-check",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Where are the big betting sites not looking? Which market should we cover next?",
+   "expected_output": "A ranked list of skipped markets with one go or none.",
+   "expectations": [
+    "Lists three to six candidates with who covers each now",
+    "Records games per season, liquidity and member asks per candidate",
+    "Answers small for a reason for each",
+    "Marks go, wait or skip with at most one go and an owner"
+   ]
+  },
+  {
+   "id": 2,
+   "prompt": "Should we add Group of Five college football totals on a partner source?",
+   "expected_output": "A size and fit check on one niche.",
+   "expectations": [
+    "Checks who covers it now",
+    "Checks whether prices are deep enough to grade against a close",
+    "Notes whether our published number could move a thin market",
+    "Sends a go to capped-experiment for its cap"
+   ]
+  },
+  {
+   "id": 3,
+   "prompt": "Set a loss cap and kill date for our NHL experiment.",
+   "expected_output": "Must not use this skill.",
+   "expectations": [
+    "The skill does not trigger"
+   ],
+   "negative": true
+  }
+ ]
+}

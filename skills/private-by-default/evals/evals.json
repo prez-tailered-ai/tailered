@@ -1,0 +1,5 @@
+{"skill_name":"private-by-default","evals":[
+{"id": 1, "prompt": "Let's add a public leaderboard showing each member's handle and their tracked Partner A positions.", "expected_output": "Sets sharing off by default with an opt-in and reviews the store.", "expectations": ["Maps handle and positions with what they were given for", "Sets showing positions to others off by default with an opt-in control", "Checks storage, readers, logs, deletion and keys", "Ends with ship, change or stop and names the release coordinator for the live change"]},
+{"id": 2, "prompt": "Can we log every member's linked sportsbook account ID in the day-build logs for debugging?", "expected_output": "Flags reuse of member data in logs and offers a safer path.", "expectations": ["Says the data was not given for logging", "Proposes a safer option such as a made-up or hashed ID", "Says tests use made-up members, not real ones", "Gives a verdict word and an owner"]},
+{"id": 3, "prompt": "A developer wants API access to our projections for their app.", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

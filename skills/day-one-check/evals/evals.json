@@ -1,0 +1,5 @@
+{"skill_name":"day-one-check","evals":[
+{"id": 1, "prompt": "All our dashboards are green and the test suite passes. Are we in good shape?", "expected_output": "Checks whether the green signals stand for the real outcome.", "expectations": ["Names which signals are proxies and what each stands for", "Checks at least one real outcome directly, such as what a member sees on the main product", "Says where a proxy and the outcome disagree, or that they agree", "Does not accept green as the answer"]},
+{"id": 2, "prompt": "Our release process has 14 steps now. Is that a problem?", "expected_output": "Process-as-proxy check, step by step.", "expectations": ["For each step, names the failure it catches", "Keeps steps that caught something real", "Proposes cutting or merging steps that catch nothing", "Keeps the owner's release word and the release coordinator in place"]},
+{"id": 3, "prompt": "Run the release checks for the new candidate.", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

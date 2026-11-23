@@ -1,0 +1,86 @@
+{
+  "_note": "Offline fixtures. Every address, network and origin is synthetic. Apply the policy with no signer, wallet, network access or SDK; a decision is made before any signature exists.",
+  "policy": {
+    "allowed_origins": ["https://paid-resource.example"],
+    "allowed_networks": ["eip155:31337"],
+    "allowed_assets": ["0x00000000000000000000000000000000000000c0"],
+    "allowed_recipients": ["0x1111111111111111111111111111111111111111"],
+    "per_task_cap_atomic": "10000",
+    "session_cap_atomic": "50000",
+    "asset_decimals": 6
+  },
+  "challenges": [
+    {
+      "id": "accept-in-policy",
+      "request_url": "https://paid-resource.example/data",
+      "requirement": {
+        "network": "eip155:31337",
+        "asset": "0x00000000000000000000000000000000000000C0",
+        "pay_to": "0x1111111111111111111111111111111111111111",
+        "amount": "5000"
+      },
+      "expected_decision": "accept",
+      "expected_reason": "origin, network, asset, recipient and amount all pass; reservation 10000 fits the session cap"
+    },
+    {
+      "id": "reject-wrong-origin",
+      "request_url": "https://other-host.example/data",
+      "requirement": {
+        "network": "eip155:31337",
+        "asset": "0x00000000000000000000000000000000000000C0",
+        "pay_to": "0x1111111111111111111111111111111111111111",
+        "amount": "5000"
+      },
+      "expected_decision": "reject",
+      "expected_reason": "origin not in allowed_origins; refused before reservation, prompt, fetch or signature"
+    },
+    {
+      "id": "reject-wrong-recipient",
+      "request_url": "https://paid-resource.example/data",
+      "requirement": {
+        "network": "eip155:31337",
+        "asset": "0x00000000000000000000000000000000000000C0",
+        "pay_to": "0x2222222222222222222222222222222222222222",
+        "amount": "5000"
+      },
+      "expected_decision": "reject",
+      "expected_reason": "pay_to not in allowed_recipients; filtered set is empty"
+    },
+    {
+      "id": "reject-wrong-network",
+      "request_url": "https://paid-resource.example/data",
+      "requirement": {
+        "network": "eip155:424242",
+        "asset": "0x00000000000000000000000000000000000000C0",
+        "pay_to": "0x1111111111111111111111111111111111111111",
+        "amount": "5000"
+      },
+      "expected_decision": "reject",
+      "expected_reason": "network not in allowed_networks; filtered set is empty"
+    },
+    {
+      "id": "reject-wrong-asset",
+      "request_url": "https://paid-resource.example/data",
+      "requirement": {
+        "network": "eip155:31337",
+        "asset": "0x0000000000000000000000000000000000000bad",
+        "pay_to": "0x1111111111111111111111111111111111111111",
+        "amount": "5000"
+      },
+      "expected_decision": "reject",
+      "expected_reason": "asset not in allowed_assets; filtered set is empty"
+    },
+    {
+      "id": "reject-over-budget",
+      "request_url": "https://paid-resource.example/data",
+      "requirement": {
+        "network": "eip155:31337",
+        "asset": "0x00000000000000000000000000000000000000C0",
+        "pay_to": "0x1111111111111111111111111111111111111111",
+        "amount": "5000000"
+      },
+      "expected_decision": "reject",
+      "expected_reason": "amount 5000000 exceeds per_task_cap_atomic 10000; filtered set is empty"
+    }
+  ]
+}

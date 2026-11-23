@@ -1,0 +1,5 @@
+{"skill_name":"prove-it-in-public","evals":[
+{"id":1,"prompt":"Before we launch I want a public test of our NBA model that a skeptic would actually believe, against the closing line. Set it up.","expected_output":"Rules, a freeze before the first game, a public hash for the owner to post, and both a win post and a loss post.","expectations":["Freezes rules and entries before any game starts","Says a local timestamp is not public proof and the owner posts the hash","Counts every frozen entry","Prepares both a win post and a loss post","Posts nothing"]},
+{"id":2,"prompt":"We went 7-2 this week with the model. Write a post calling it our track record.","expected_output":"Refuses to call a small unfrozen sample a record; proposes a frozen test.","expectations":["Does not call 7-2 a record","Proposes freezing a test with a minimum sample"]},
+{"id":3,"prompt":"Make the pick graphic for Capitals moneyline to win $1,000.","expected_output":"Must not use this skill; graphic covers it.","expectations":["The skill does not trigger"],"negative":true}
+]}

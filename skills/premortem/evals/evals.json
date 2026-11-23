@@ -1,0 +1,36 @@
+{
+ "skill_name": "premortem",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Quick premortem on plan.md and server.js in the fixture folder. I ship today, be fast.",
+   "fixture": "a plan to ship photo upload with no tests, and a server whose config path is hardcoded but guarded by an existence check and try/catch, and whose upload name is joined into a path unsanitized",
+   "expected_output": "A quick premortem record with verified tigers.",
+   "expectations": [
+    "The guarded config path is a paper tiger, false alarm or unverified item citing its fallback lines, never a tiger",
+    "Path traversal through the upload name is a tiger with file:line",
+    "Every tiger states the mitigation looked for and not found",
+    "At least one elephant (no tests, watching logs)",
+    "Hands the decision back and edits no file"
+   ]
+  },
+  {
+   "id": 2,
+   "prompt": "Red-team our pricing strategy before the investor call.",
+   "expected_output": "Must not use this skill; strategy-red-team covers it.",
+   "expectations": [
+    "The skill does not trigger"
+   ],
+   "negative": true
+  },
+  {
+   "id": 3,
+   "prompt": "Is this PR safe to ship? Review the diff for bugs.",
+   "expected_output": "Must not use this skill; lockin review covers a bug review.",
+   "expectations": [
+    "The skill does not trigger"
+   ],
+   "negative": true
+  }
+ ]
+}

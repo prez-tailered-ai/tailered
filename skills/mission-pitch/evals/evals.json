@@ -1,0 +1,5 @@
+{"skill_name":"mission-pitch","evals":[
+{"id": 1, "prompt": "Write a job post for a modeling engineer. We can't pay Google money.", "expected_output": "A problem-led post with honest pay and hours.", "expectations": ["Leads with the hard problem and a number the person would move", "States a pay range and weekly hours and does not say competitive", "Adds a paid test task with a time limit and a named reviewer", "Leaves sending to the owner with send, change or hold"]},
+{"id": 2, "prompt": "Draft a note inviting a strong NBA modeler to publish on the creator marketplace. Tell them we have 10,000 members.", "expected_output": "A mission note that checks every number first.", "expectations": ["Checks the 10,000 member figure against a source and removes it if not real", "Cites the rule never to put a number in front of a recruit before it is real", "Promises no winnings or picks", "Saves a draft and does not send it"]},
+{"id": 3, "prompt": "What revenue share should Creator A get to stay on the creator marketplace?", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

@@ -1,0 +1,36 @@
+{
+ "skill_name": "weekly-rival-read",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Go look at the rivals this week. What are Action Network and OddsJam doing that we aren't?",
+   "expected_output": "One reader, one copy-or-skip item.",
+   "expectations": [
+    "Names one reader for the week and lists the sites with dates",
+    "Reads public pages only and creates no account or trial",
+    "Brings exactly one item with the rival credited by name",
+    "Gives the verdict copy or skip with a reason for prediction-market traders and bettors"
+   ]
+  },
+  {
+   "id": 2,
+   "prompt": "A partner source just launched a parlay builder. Should we have one?",
+   "expected_output": "A rival read on one item, judged for fit.",
+   "expectations": [
+    "Treats it as the week's one item and credits a partner source",
+    "Checks fit with a projections product that never gives picks",
+    "Gives copy or skip, and on copy hands off to copy-then-outgrow with an owner",
+    "Builds and ships nothing"
+   ]
+  },
+  {
+   "id": 3,
+   "prompt": "We already decided to copy OddsJam's line-shopping table. Plan our better version.",
+   "expected_output": "Must not use this skill.",
+   "expectations": [
+    "The skill does not trigger"
+   ],
+   "negative": true
+  }
+ ]
+}

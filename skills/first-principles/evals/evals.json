@@ -1,0 +1,53 @@
+{
+  "skill_name": "first-principles",
+  "evals": [
+    {
+      "id": 1,
+      "branch": "rebuild",
+      "prompt": "Our odds vendor says real-time odds for 6 leagues can only be consumed through their streaming socket on a dedicated server, and that everyone in the industry runs it that way. We need pregame lines only, refreshed every 60 seconds. Is the dedicated streaming server a fixed requirement?",
+      "expected_output": "Tagged constraints, primitives, rebuild, residuals, kill test.",
+      "expectations": [
+        "Each claimed constraint tagged with one of physics/math, regulation/contract, measured fact, owner requirement, convention/authority",
+        "The vendor's streaming-server claim and 'everyone runs it that way' tagged convention/authority",
+        "Primitives cite their support",
+        "Rebuild uses only primitives",
+        "Data licensing and terms of use kept as binding residuals",
+        "One cheapest kill test",
+        "Pregame-only and the 60-second refresh tagged owner requirement and kept binding"
+      ]
+    },
+    {
+      "id": 2,
+      "branch": "redesign",
+      "prompt": "Design: a notes service for one user. Note {id, body, updatedAt}. Storage: one JSON file per note in /data. API: GET and PUT /notes/:id. README lists the two endpoints with a curl PUT example. Rationale section: single user, so no auth. New requirement: share a note read-only with another person. Just add a shared flag, keep it minimal.",
+      "expected_output": "From-scratch design, propagation list, delivery order.",
+      "expectations": [
+        "States what would be built if sharing had been there from the start",
+        "Names that 'single user, so no auth' is now false",
+        "Propagation list covering type, storage, API, README, example and rationale",
+        "An incremental delivery order",
+        "If a flag is kept, says what it leaves open"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Production is down right now with 502s; what do we do?",
+      "expected_output": "Must not run a first-principles rebuild during an incident.",
+      "expectations": [
+        "The skill does not trigger"
+      ],
+      "negative": true,
+      "branch": "none"
+    },
+    {
+      "id": 4,
+      "prompt": "That hotel is too expensive, any other ideas for the trip?",
+      "expected_output": "Must not run a first-principles rebuild on a casual remark.",
+      "expectations": [
+        "The skill does not trigger"
+      ],
+      "negative": true,
+      "branch": "none"
+    }
+  ]
+}

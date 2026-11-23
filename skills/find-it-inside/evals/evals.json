@@ -1,0 +1,5 @@
+{"skill_name":"find-it-inside","evals":[
+{"id":1,"prompt":"I'm thinking about paying for another data tool at $500 a month. Before I do, where can we find that money inside the business?","expected_output":"A table across five kinds with priced and unpriced rows and undo, stating whether it covers $500.","expectations":["Searches every kind or marks it unavailable","Separates priced and unpriced","States whether the monthly total covers $500","Retires nothing"]},
+{"id":2,"prompt":"Could we sell the minute price history we've been capturing? How much is that worth on the books right now?","expected_output":"Treats it as a by-product with no price until there is an offer or test.","expectations":["Does not state a revenue figure as fact","Proposes a real test or offer"]},
+{"id":3,"prompt":"Get the backtest under $1 a run.","expected_output":"Must not use this skill; price-forces-cost covers one job's target.","expectations":["The skill does not trigger"],"negative":true}
+]}

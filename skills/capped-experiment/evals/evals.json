@@ -1,0 +1,5 @@
+{"skill_name":"capped-experiment","evals":[
+{"id": 1, "prompt": "Let's try covering MLB player props as a big experiment.", "expected_output": "An experiment with a hypothesis, a loss cap and a kill date set before start.", "expectations": ["States the hypothesis and the success number", "Sets a loss cap in money and time, sized against runway", "Sets a kill date before starting", "Says how a failure will be written up and kept"]},
+{"id": 2, "prompt": "Our Partner A test has lost money for three weeks. Should we keep going?", "expected_output": "Judges against the preset cap and kill date, without sunk cost.", "expectations": ["Asks for or applies the cap and kill date set at the start", "If none were set, sets them now and says so", "Ignores money already spent as a reason to continue", "Gives continue or stop with the number that decided it"]},
+{"id": 3, "prompt": "Compare these two prompts on our eval set and tell me which scores higher.", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

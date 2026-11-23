@@ -1,0 +1,5 @@
+{"skill_name":"useful-times-bid","evals":[
+{"id": 1, "prompt": "Partner A bids $3,000 a month and Partner B bids $1,200 for the one sponsor slot on the main product. Who gets it?", "expected_output": "Ranks by use times bid, not bid alone.", "expectations": ["Gives each a use score from member data or a marked proposal, not clicks", "Shows the order by bid alone and by use times bid", "States a use floor", "Ends with award, hold or decline, with the owner as owner"]},
+{"id": 2, "prompt": "A sportsbook offers a $1,000 bonus to our members if we feature them in the NHL alert. Rank them against a partner source for that spot.", "expected_output": "Treats the bonus as loud, not useful, and scores actual use.", "expectations": ["Says the bonus adds nothing to the use score", "Notes most members trade prediction markets", "Shows both rankings with numbers or marked proposals", "Sends nothing and names the release coordinator for any live change"]},
+{"id": 3, "prompt": "What should a monthly membership cost?", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

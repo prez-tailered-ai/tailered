@@ -1,0 +1,5 @@
+{"skill_name":"one-league-trial","evals":[
+{"id":1,"prompt":"I want to change how the day build refreshes prediction market prices, shorter window. Test it small first on NHL before every sport.","expected_output":"A trial plan or run on a copied folder, narrowed to NHL, with a baseline and at least three settings.","expectations":["Uses a copied folder, never a link","Notes the day build has no league flag and narrows the league table in the copy","Runs a baseline plus at least three settings","Ends in expand or stop"]},
+{"id":2,"prompt":"Here are my runs: baseline 40s 9/9 checks. Batch 10 took 50s 9/9, batch 25 took 30s 9/9, batch 50 took 20s 8/9. NCAAM only. Do we roll it out?","expected_output":"EXPAND with batch 25.","expectations":["Picks batch 25","Rejects batch 50 for losing a check","Does not call this ready to ship"]},
+{"id":3,"prompt":"Run the full release checks on the new candidate and take it through the release coordinator.","expected_output":"Must not use this skill; workflow covers it.","expectations":["The skill does not trigger"],"negative":true}
+]}

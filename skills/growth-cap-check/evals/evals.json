@@ -1,0 +1,5 @@
+{"skill_name":"growth-cap-check","evals":[
+{"id":1,"prompt":"A sportsbook partner sent these terms: 'Partner may promote the company to up to 5,000 members. Partner must approve any change to subscription price. Term is 3 years, exclusive.' We have 800 members. What does this stop us doing, and where do we walk away?","expected_output":"Caps quoted exactly, members biting at 6.25x, price approval biting now, exclusivity flagged, and walk-away lines.","expectations":["Quotes the clauses exactly","Finds the 5,000 cap bites at 6.25 times today","Treats the approval right as biting now","Writes walk-away lines","Signs and sends nothing"]},
+{"id":2,"prompt":"An investor wants a board seat and a veto over new products. Review the term sheet in term-sheet.txt.","expected_output":"Reads the document, or says it needs the file; flags the veto.","expectations":["Asks for or reads the real wording","Flags the veto as a cap at any size"]},
+{"id":3,"prompt":"A partner source keeps going down. Should we build our own feed?","expected_output":"Must not use this skill; stoppage-to-ownership covers it.","expectations":["The skill does not trigger"],"negative":true}
+]}

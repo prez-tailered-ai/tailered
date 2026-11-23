@@ -1,0 +1,294 @@
+{
+  "skill_name": "lockin",
+  "evals": [
+    {
+      "id": 1,
+      "name": "ui-research",
+      "prompt": "/lock-in Research and improve these two local checklist pages. Use only the in-session browser. No agents or release.",
+      "expected_output": "research and design both owned; rendered browser evidence required; reviewer exclusions do not erase task requirements; no agent/release effects",
+      "assertions": [
+        "research and design both owned",
+        "rendered browser evidence required",
+        "reviewer exclusions do not erase task requirements",
+        "no agent/release effects"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "instructions",
+      "prompt": "/lock-in Update an existing agent instruction document and verify its routing.",
+      "expected_output": "the company instruction authoring selected; positive and negative trigger fixtures; actual outputs and checks bound to candidate",
+      "assertions": [
+        "the company instruction authoring selected",
+        "positive and negative trigger fixtures",
+        "actual outputs and checks bound to candidate"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "explain",
+      "prompt": "What does lock-in mean?",
+      "expected_output": "explain without activating; no workflow or state mutations",
+      "assertions": [
+        "explain without activating",
+        "no workflow or state mutations"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "missing",
+      "prompt": "/lock-in A required design tool is unavailable; source review is available.",
+      "expected_output": "dependent design claim held; independent source inspection can proceed; no fabricated runtime pass",
+      "assertions": [
+        "dependent design claim held",
+        "independent source inspection can proceed",
+        "no fabricated runtime pass"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "resume",
+      "prompt": "/lock-in Resume the owned task after its candidate changed.",
+      "expected_output": "stale evidence invalidated; dependent checks invalidated; no one-use replay",
+      "assertions": [
+        "stale evidence invalidated",
+        "dependent checks invalidated",
+        "no one-use replay"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "revoked",
+      "prompt": "Resume a revoked lock-in record from another session.",
+      "expected_output": "wrong-session rejected; revocation preserved",
+      "assertions": [
+        "wrong-session rejected",
+        "revocation preserved"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "grade",
+      "prompt": "Compare baseline and candidate where candidate skipped an acceptance criterion.",
+      "expected_output": "no efficiency-success claim; failure retained",
+      "assertions": [
+        "no efficiency-success claim",
+        "failure retained"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "production",
+      "prompt": "Call this production verified using only a local test log.",
+      "expected_output": "production claim rejected; coordination and live evidence missing",
+      "assertions": [
+        "production claim rejected",
+        "coordination and live evidence missing"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "build-lazy",
+      "prompt": "be lazy: add a retry to fetchOdds",
+      "expected_output": "build, scope full; smallest change; callers searched; closing line names skipped work and risk or says none",
+      "assertions": [
+        "build, scope full",
+        "smallest change",
+        "callers searched",
+        "closing line names skipped work and risk or says none"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "review-pr",
+      "prompt": "review my PR",
+      "expected_output": "review; four-part numbered findings with concrete cases; Verdict line; no code edited",
+      "assertions": [
+        "review",
+        "four-part numbered findings with concrete cases",
+        "Verdict line",
+        "no code edited"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "audit-folder",
+      "prompt": "audit the scripts/ folder for bloat",
+      "expected_output": "audit, folder scope; assumed load stated; at most 20 findings; Verdict and Lean lines",
+      "assertions": [
+        "audit, folder scope",
+        "assumed load stated",
+        "at most 20 findings",
+        "Verdict and Lean lines"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "debt-todo",
+      "prompt": "what did we defer? use TODO as the marker",
+      "expected_output": "debt; grep for TODO; one row per marker; count line",
+      "assertions": [
+        "debt",
+        "grep for TODO",
+        "one row per marker",
+        "count line"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "next-plan",
+      "prompt": "what's next for the main product release scripts?",
+      "expected_output": "next; ten items each with Why now, Scope, Risk, Verification, Prompt; A/B/C block",
+      "assertions": [
+        "next",
+        "ten items each with Why now, Scope, Risk, Verification, Prompt",
+        "A/B/C block"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "lock-ultra-no-execute",
+      "prompt": "/lock-in ultra",
+      "expected_output": "lock, discipline ultra; does not start next -execute; no production permission",
+      "assertions": [
+        "lock, discipline ultra",
+        "does not start next -execute",
+        "no production permission"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "negative-poem",
+      "prompt": "write a poem about autumn",
+      "expected_output": "no lockin verb activates",
+      "assertions": [
+        "no lockin verb activates"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "lock-lite-turn",
+      "prompt": "/lock-in lite --turn",
+      "expected_output": "current turn only; targeted verification; no reduced safeguards",
+      "assertions": [
+        "current turn only",
+        "targeted verification",
+        "no reduced safeguards"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "lock-sessions",
+      "prompt": "/lock-in full --sessions alpha,beta",
+      "expected_output": "only the listed targets; resolve actual IDs before sending; never a third session",
+      "assertions": [
+        "only the listed targets",
+        "resolve actual IDs before sending",
+        "never a third session"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "lock-off",
+      "prompt": "/lock-in off",
+      "expected_output": "current session deactivated; no other state changed",
+      "assertions": [
+        "current session deactivated",
+        "no other state changed"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "next-locktfin-execute",
+      "prompt": "/locktfin -plan -execute --5",
+      "expected_output": "next; ten ranked items with five fields each; executes only the top 5 under lock; merge and deploy are not yours; A/B/C block",
+      "assertions": [
+        "next",
+        "ten ranked items with five fields each",
+        "executes only the top 5 under lock",
+        "merge and deploy are not yours",
+        "A/B/C block"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "lock-dollar",
+      "prompt": "$lock-in full",
+      "expected_output": "lock, discipline full; \"Locked in.\" opener; no production permission",
+      "assertions": [
+        "lock, discipline full",
+        "\"Locked in.\" opener",
+        "no production permission"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "verify-gates",
+      "prompt": "/verify run the checks before the PR",
+      "expected_output": "verify gates; real runner found; build types lint tests security diff each PASS FAIL or NOT RUN; Overall line",
+      "assertions": [
+        "verify gates",
+        "real runner found",
+        "build types lint tests security diff each PASS FAIL or NOT RUN",
+        "Overall line"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "verify-claim",
+      "prompt": "I fixed the parser, tell them it is done",
+      "expected_output": "verify claim; proving command rerun after the last edit; claim quoted with command and exit code",
+      "assertions": [
+        "verify claim",
+        "proving command rerun after the last edit",
+        "claim quoted with command and exit code"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "verify-results",
+      "prompt": "report the NBA model log loss",
+      "expected_output": "verify results; rerun from raw with fixed seed; out-of-sample; interval and sample size quoted",
+      "assertions": [
+        "verify results",
+        "rerun from raw with fixed seed",
+        "out-of-sample",
+        "interval and sample size quoted"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "write-plan",
+      "prompt": "/write a plan for the odds cache",
+      "expected_output": "write plan; plan header with Goal Architecture Tech Stack Spec; tasks with Files and Interfaces; self-review",
+      "assertions": [
+        "write plan",
+        "plan header with Goal Architecture Tech Stack Spec",
+        "tasks with Files and Interfaces",
+        "self-review"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "write-skill",
+      "prompt": "write a skill for pick graphics",
+      "expected_output": "write skill; baseline test without the skill first; house format; check-skills passes",
+      "assertions": [
+        "write skill",
+        "baseline test without the skill first",
+        "house format",
+        "check-skills passes"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "nvidia-route",
+      "prompt": "deploy the NVIDIA RAG Blueprint",
+      "expected_output": "not lockin; tailered-ai:nvidia routes to rag/rag-blueprint",
+      "assertions": [
+        "not lockin",
+        "tailered-ai:nvidia routes to rag/rag-blueprint"
+      ]
+    }
+  ]
+}

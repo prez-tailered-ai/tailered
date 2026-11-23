@@ -1,0 +1,5 @@
+{"skill_name":"work-sample-hire","evals":[
+{"id": 1, "prompt": "Two people applied to help with the NHL model. One went to MIT, the other has no degree but a public Kaggle record. Who should we pick?", "expected_output": "A paid work sample on scrubbed data, a rubric written first, and blind scores.", "expectations": ["Sets a work sample from real company work with a time cap and pay marked proposal", "Writes the rubric before entries are read and excludes school as a criterion", "Uses two blind reviewers", "Gives hire, change or stop and leaves the offer to the owner"]},
+{"id": 2, "prompt": "Give me a few good brainteasers to ask a contract data engineer on Thursday.", "expected_output": "Replaces brainteasers with a work sample and rubric.", "expectations": ["Declines brainteasers and says why", "Writes a work sample from a real pipeline task", "Keeps member data out of the sample", "Keeps candidate entries private in the task folder"]},
+{"id": 3, "prompt": "The freelancer we picked needs access to the odds database. What should they get?", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

@@ -1,0 +1,5 @@
+{"skill_name":"graded-okrs","evals":[
+{"id": 1, "prompt": "Help me set Q1 goals: launch a new league, improve the main product, get more members.", "expected_output": "Objectives with numeric key results, baselines, owners and a side-time share.", "expectations": ["Turns each goal into key results with a number, baseline, target, date and owner", "Marks values it supplied as proposal", "Sets a side-time share in hours per week", "Leaves approval of the set with the owner"]},
+{"id": 2, "prompt": "The quarter ended. Our key result was 500 paying members and we got 310. What now?", "expected_output": "A 0 to 1 grade with a verdict and no mid-quarter rewrite.", "expectations": ["Grades the key result about 0.6 from 310 of 500", "Writes the grade even though the target was missed", "Gives keep, change or stop for the objective", "Does not send or post the grades"]},
+{"id": 3, "prompt": "I have six tasks and one afternoon. Which do I do first?", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

@@ -1,0 +1,5 @@
+{"skill_name":"name-the-red-line","evals":[
+{"id": 1, "prompt": "A partner market says they'll partner with us if we stop showing Partner A prices next to theirs. Should we?", "expected_output": "Tests the request against written lines and drafts the stand.", "expectations": ["Writes or proposes a dated list of lines including showing every market's price fairly", "States the cost of saying no as a number or marked proposal", "Gives refuse, accept or accept-with-change, with the owner deciding", "Drafts a reply and sends nothing"]},
+{"id": 2, "prompt": "A big creator wants us to delete our losing NCAAF week from the public record before they promote us.", "expected_output": "Finds the published-record line crossed and refuses.", "expectations": ["Names publishing the full record, losses included, as a line", "Marks the line crossed", "Refuses or offers a version that crosses no line", "Drafts the stand for the owner and posts nothing"]},
+{"id": 3, "prompt": "An investor wants a board seat and a veto on new leagues. Do we give it?", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

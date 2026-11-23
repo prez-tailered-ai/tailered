@@ -1,0 +1,5 @@
+{"skill_name":"mission-is-the-boss","evals":[
+{"id": 1, "prompt": "I have eight things open this week and no plan. What should we actually work on?", "expected_output": "Every task tested against a written mission, top three with owners and dates.", "expectations": ["Writes the mission in one sentence, marked the owner's or proposal", "Gives keep, change or stop with a reason on every task", "Picks a top three with an owner and a look-again date each", "Lists stops as proposals for the owner, not done"]},
+{"id": 2, "prompt": "Two sessions both want this week: one on the MLB props idea, one on fixing NHL grading. Which matters more?", "expected_output": "Tests both against the mission and orders them.", "expectations": ["Tests each task with one question against the mission", "Reads other sessions' records without writing them", "Orders the two with a one-line reason", "Names an owner for the kept task"]},
+{"id": 3, "prompt": "Should we drop college football to save money this season, even if it hurts us in three years?", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

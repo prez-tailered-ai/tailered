@@ -1,0 +1,36 @@
+{
+ "skill_name": "pass-the-saving",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Let's run a Black Friday promo: 40% off the first month.",
+   "expected_output": "A promo replaced by a steady-price comparison.",
+   "expectations": [
+    "States the revenue the promo gives up in monthly dollars",
+    "Compares promo, lower steady price and saving spent on product in a three-row table",
+    "Gives pass through, keep or stop the promo as the verdict",
+    "Changes nothing in billing and routes any price change through the release coordinator on the owner's word"
+   ]
+  },
+  {
+   "id": 2,
+   "prompt": "Our odds feed renewal came in $300 a month cheaper. What do we do with the saving?",
+   "expected_output": "A pass-through decision on a real saving.",
+   "expectations": [
+    "Checks the saving is real and not a cut in freshness or a supplier squeeze",
+    "Uses $300 a month in the comparison",
+    "Shows the monthly effect at today's member count, real or marked proposal",
+    "Leaves the decision with the owner"
+   ]
+  },
+  {
+   "id": 3,
+   "prompt": "We want to charge $49 a month. Work out what each step of the day build must cost to make that work.",
+   "expected_output": "Must not use this skill.",
+   "expectations": [
+    "The skill does not trigger"
+   ],
+   "negative": true
+  }
+ ]
+}

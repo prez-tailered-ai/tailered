@@ -1,0 +1,119 @@
+{
+  "phases": [
+    "research",
+    "design",
+    "implementation",
+    "verification",
+    "evaluation"
+  ],
+  "profiles": {
+    "explain": [],
+    "ui": [
+      "design",
+      "implementation",
+      "verification",
+      "browser"
+    ],
+    "research": [
+      "research"
+    ],
+    "engineering": [
+      "implementation",
+      "verification"
+    ],
+    "instructions": [
+      "instructions",
+      "implementation",
+      "verification"
+    ],
+    "undecided": [
+      "decisions"
+    ],
+    "audit": [
+      "architecture",
+      "test-credibility",
+      "verification"
+    ],
+    "evaluation": [
+      "evaluation"
+    ]
+  },
+  "capabilities": {
+    "research": {
+      "phase": "research",
+      "contribution": "Resolve named uncertainties; preserve primary evidence and transfer limits",
+      "paths": [
+        ".claude/plugins/cache/<marketplace>/tailered-ai/*/skills/apex-research/SKILL.md",
+        ".codex/plugins/cache/<marketplace>/tailered-ai/*/skills/apex-research/SKILL.md",
+        ".codex/plugins/cache/openai-curated-remote/<app-id>/*/skills/Search/SKILL.md"
+      ]
+    },
+    "design": {
+      "phase": "design",
+      "contribution": "Own interaction, visual craft and rendered review before freezing",
+      "paths": [
+        ".agents/skills/impeccable/SKILL.md"
+      ]
+    },
+    "decisions": {
+      "phase": "design",
+      "contribution": "Resolve only undecided behavior",
+      "paths": [
+        ".codex/plugins/cache/openai-curated-remote/superpowers/*/skills/brainstorming/SKILL.md"
+      ]
+    },
+    "implementation": {
+      "phase": "implementation",
+      "contribution": "Complete the smallest authorized slice",
+      "paths": [
+        ".claude/plugins/cache/<marketplace>/tailered-ai/*/skills/lockin/SKILL.md",
+        ".codex/plugins/cache/<marketplace>/tailered-ai/*/skills/lockin/SKILL.md"
+      ]
+    },
+    "verification": {
+      "phase": "verification",
+      "contribution": "Run applicable actual project checks",
+      "paths": [
+        ".claude/plugins/cache/<marketplace>/tailered-ai/*/skills/lockin/SKILL.md",
+        ".codex/plugins/cache/<marketplace>/tailered-ai/*/skills/lockin/SKILL.md"
+      ]
+    },
+    "browser": {
+      "phase": "verification",
+      "contribution": "Observe actual user journeys on the user-selected browser",
+      "paths": [
+        ".codex/plugins/cache/ecc/ecc/*/skills/browser-qa/SKILL.md"
+      ]
+    },
+    "test-credibility": {
+      "phase": "verification",
+      "contribution": "Challenge suspicious passes with intended negative controls",
+      "paths": [
+      ]
+    },
+    "instructions": {
+      "phase": "implementation",
+      "contribution": "Write tested pointers, branches and completion criteria",
+      "paths": [
+        ".claude/plugins/cache/<marketplace>/tailered-ai/*/skills/writing-for-agents/SKILL.md",
+        ".codex/plugins/cache/<marketplace>/tailered-ai/*/skills/writing-for-agents/SKILL.md"
+      ]
+    },
+    "evaluation": {
+      "phase": "evaluation",
+      "contribution": "Compare equivalent tasks using raw results",
+      "paths": [
+        ".claude/plugins/cache/<marketplace>/tailered-ai/*/skills/agent-eval/SKILL.md",
+        ".codex/plugins/cache/<marketplace>/tailered-ai/*/skills/agent-eval/SKILL.md"
+      ]
+    },
+    "architecture": {
+      "phase": "design",
+      "contribution": "Diagnose routing, memory and execution boundaries",
+      "paths": [
+        ".claude/plugins/cache/<marketplace>/tailered-ai/*/skills/agent-architecture-audit/SKILL.md",
+        ".codex/plugins/cache/<marketplace>/tailered-ai/*/skills/agent-architecture-audit/SKILL.md"
+      ]
+    }
+  }
+}

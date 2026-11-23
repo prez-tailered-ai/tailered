@@ -1,0 +1,5 @@
+{"skill_name":"speed-of-light-check","evals":[
+{"id": 1, "prompt": "The day build takes 47 minutes. How fast could it possibly be?", "expected_output": "A computed floor with sourced terms and a gap per stage.", "expectations": ["Computes a limit from input arrival, data size, compute and release checks, each with a source", "Does not count release checks as waste", "Shows actual, limit and gap per stage, largest gap first", "Gives keep, change or stop with an owner and a target number"]},
+{"id": 2, "prompt": "Odds capture now takes 6 minutes per slate, down from 9 last month. Are we good?", "expected_output": "Judges run time against the limit, not last month.", "expectations": ["Does not judge the job good only because it beat last month", "Computes the time floor from input arrival, data size and compute with the math shown", "States the gap between 6 minutes and the floor", "Ends in a verdict and names the release route for any change"]},
+{"id": 3, "prompt": "Where did this session's tokens go? It feels like we kept re-reading files.", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

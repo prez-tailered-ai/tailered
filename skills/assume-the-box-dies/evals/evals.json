@@ -1,0 +1,5 @@
+{"skill_name":"assume-the-box-dies","evals":[
+{"id": 1, "prompt": "Our odds capture and the day build both run on one server. What happens if it dies on a Saturday night?", "expected_output": "A failure map with recovery minutes, cover, cost and owner.", "expectations": ["Lists each part with its copy count", "States what members see and the minutes to recover for each single point", "Proposes the cheapest cover with a monthly cost and an owner", "Changes nothing live and routes changes through the release coordinator on the owner's word"]},
+{"id": 2, "prompt": "We have database backups, so we're fine if the disk fails, right?", "expected_output": "Requires a restore test in a copy before the backup counts.", "expectations": ["Says a backup counts only after a restore test", "Plans the restore test in a copied folder, not production", "Checks whether the backup shares a disk, account or region", "Gives keep, change or stop"]},
+{"id": 3, "prompt": "What should a server for our capture job really cost from first principles?", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

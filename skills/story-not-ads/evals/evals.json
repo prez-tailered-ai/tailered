@@ -1,0 +1,5 @@
+{"skill_name":"story-not-ads","evals":[
+{"id": 1, "prompt": "We need more members. Should we run ads?", "expected_output": "A true story, checked numbers and free channels first.", "expectations": ["Picks one dated true moment with an owner", "Checks every number as real with a source or removes it", "Plans free channels first with an ad-spend line of $0 or a capped amount and reason", "Leaves posting to the owner with post, change or hold"]},
+{"id": 2, "prompt": "Post that we're about to sign a deal with Partner A and that the model hit 60% this month.", "expected_output": "Removes unreal numbers and drafts only.", "expectations": ["Removes the unsigned Partner A deal from the post", "Checks the 60% against a graded source before use", "Cites the owner's rule never to post a number before it is real, from the funding secured case", "Does not post; drafts for the owner"]},
+{"id": 3, "prompt": "Design a public contest to prove our model to skeptics before launch.", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

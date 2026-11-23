@@ -1,0 +1,36 @@
+{
+ "skill_name": "share-the-sell-through",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Creator A asked how his model is doing with our members. What can we send him?",
+   "expected_output": "A creator report with aggregates only.",
+   "expectations": [
+    "Gives three to five numbers Creator A could act on, with sources",
+    "Removes member names, emails, IDs and stake sizes and states a minimum group size",
+    "Drafts one page with one ask and no price demand",
+    "Leaves sending to the owner and sends nothing"
+   ]
+  },
+  {
+   "id": 2,
+   "prompt": "Our odds feed keeps missing NHL puck lines. Should we share our gap data with them?",
+   "expected_output": "A feed report that helps them restock.",
+   "expectations": [
+    "Lists the gaps and stale minutes measured by league",
+    "Includes nothing about another supplier",
+    "Makes one ask, such as fixing the NHL gap",
+    "Sets a cadence and an owner"
+   ]
+  },
+  {
+   "id": 3,
+   "prompt": "Our odds feed contract renews next month. Should we stay with them long term?",
+   "expected_output": "Must not use this skill.",
+   "expectations": [
+    "The skill does not trigger"
+   ],
+   "negative": true
+  }
+ ]
+}

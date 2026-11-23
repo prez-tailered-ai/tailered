@@ -1,0 +1,5 @@
+{"skill_name":"long-term-letter","evals":[
+{"id": 1, "prompt": "Should we stop covering NCAAF this season to save time? Check it against our long-term priorities.", "expected_output": "A judgment against a written set of long-term commitments, with a runway check.", "expectations": ["Finds or writes the standing long-term commitments before judging", "Judges the effect over years, not only this season", "Names what the choice costs in cash or time against the runway", "Gives a clear keep or stop"]},
+{"id": 2, "prompt": "Write the company's long-term letter, like Bezos' 1997 shareholder letter.", "expected_output": "A one-page letter of a few measurable commitments with a runway floor.", "expectations": ["One page or less", "A few commitments, each with a measure", "Says what the company will trade short-term results for, and what it will not", "Includes a floor: each long bet has a checkpoint date and cash limit, not years of losses"]},
+{"id": 3, "prompt": "What's the closing line for tonight's Lakers game?", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

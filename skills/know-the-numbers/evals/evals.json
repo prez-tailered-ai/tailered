@@ -1,0 +1,5 @@
+{"skill_name":"know-the-numbers","evals":[
+{"id": 1, "prompt": "I'm meeting an investor Thursday. Drill me on the model.", "expected_output": "Ten sourced numbers, a drill and a ready verdict.", "expectations": ["Picks ten load-bearing numbers, each tied to a decision", "Gives each a source path and owner or marks it unsourced", "Scores each answer match or miss within 10% of the source", "Ends in ready or not ready"]},
+{"id": 2, "prompt": "I'm sure the NBA model is 58% against the close. Put that in the deck.", "expected_output": "Checks the figure before it goes anywhere.", "expectations": ["Checks the 58% against its source before use", "Keeps an unsourced number out of the deck", "Writes the owner's view and the data side by side if they differ, with the test that would settle it", "Does not send or publish the deck"]},
+{"id": 3, "prompt": "Three sessions are each doing part of the NHL launch. Who should own it?", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

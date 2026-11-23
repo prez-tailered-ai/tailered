@@ -1,0 +1,36 @@
+{
+ "skill_name": "day-drive-map",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "We want to add Partner A prices to the NBA main product. Can our current setup serve it?",
+   "expected_output": "A reach check for the new surface.",
+   "expectations": [
+    "Maps the new surface to an existing hub",
+    "Gives measured or proposed price age against a window",
+    "Counts surfaces on the hub and checks its lease with lease-register",
+    "Gives add, wait or new hub with the number that decided it"
+   ]
+  },
+  {
+   "id": 2,
+   "prompt": "NCAAM prices on the main product are often 30 minutes old. Why, and where should the job live?",
+   "expected_output": "A drive-time map that finds the slow surface.",
+   "expectations": [
+    "Records price age per surface against its window",
+    "Marks NCAAM outside its window",
+    "Names what goes dark if the hub stops",
+    "Routes any host move through workflow and the release coordinator on the owner's word"
+   ]
+  },
+  {
+   "id": 3,
+   "prompt": "Build one general pipeline so any new sport takes a day instead of a week.",
+   "expected_output": "Must not use this skill.",
+   "expectations": [
+    "The skill does not trigger"
+   ],
+   "negative": true
+  }
+ ]
+}

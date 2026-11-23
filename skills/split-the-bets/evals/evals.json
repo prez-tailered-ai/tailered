@@ -1,0 +1,5 @@
+{"skill_name":"split-the-bets","evals":[
+{"id": 1, "prompt": "The creator program and the bankroll tool keep eating day-build time. Should we spin them out like Alphabet?", "expected_output": "Core and bets separated, each with leader, budget, borrow limit, review and kill number.", "expectations": ["Names the core and lists each bet with monthly cost and result number", "Gives each bet a leader, ledger, budget and written borrow limit on day-build time", "Sets a review date and kill number per bet", "Gives keep, change or stop and leaves the decision with the owner"]},
+{"id": 2, "prompt": "We've had an MLB side project for 14 months. Nobody knows what it costs.", "expected_output": "Puts the bet on its own books and reviews it now.", "expectations": ["Estimates the monthly cost in dollars and hours, marked proposal", "Sets a review now since it ran past a year", "Shows its losses beside the core", "Moves or stops nothing itself"]},
+{"id": 3, "prompt": "Three sessions are each doing part of the NCAAM launch. Who should own it?", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

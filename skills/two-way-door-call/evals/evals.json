@@ -1,0 +1,5 @@
+{"skill_name":"two-way-door-call","evals":[
+{"id": 1, "prompt": "Should we switch the main product default sort from start time to biggest edge? Just decide.", "expected_output": "A two-way door call with a rollback, acted on with partial information.", "expectations": ["Classifies it as reversible and says why", "Decides without waiting for complete data, naming what is still unknown", "Names the rollback and who can make it", "Still routes the live change through the release coordinator on the owner's word"]},
+{"id": 2, "prompt": "We want to delete last season's raw odds captures to free disk. Two-way door, right?", "expected_output": "A one-way door call that slows down.", "expectations": ["Classifies deletion as one-way", "Says the owner decides and lists what must be true first, such as a verified backup", "Offers a reversible alternative such as moving or compressing", "Does not run the deletion"]},
+{"id": 3, "prompt": "Review this diff for bugs.", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

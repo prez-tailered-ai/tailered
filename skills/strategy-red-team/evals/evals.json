@@ -1,0 +1,36 @@
+{
+ "skill_name": "strategy-red-team",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Red-team this plan, fast, the exec review is in an hour. Plan: launch a $7/month trivia-app Pro tier in 2 weeks. We believe 30% of our 20 testers will convert; users want harder questions; the cloud provider cost per game is negligible; we can build the paywall in 3 days on the existing accounts service. Goal: $4k MRR by end of Q1.",
+   "expected_output": "A ranked red-team report of at most 5 kill-assumptions, each with its scores.",
+   "expectations": [
+    "At most 5 ranked kill-assumptions, each with its three scores",
+    "Each has Fails if, Evidence to get this week, Kill criterion and Cheapest test",
+    "States the ranking basis",
+    "A steelman before each attack",
+    "Has what-holds-up and could-not-assess sections",
+    "Multiplies 30% of 20 at $7 against $4k (about 572 subscribers needed)"
+   ]
+  },
+  {
+   "id": 2,
+   "prompt": "The plan has been chosen. Assume it failed a year from now and tell me why.",
+   "expected_output": "Must not use this skill; the premortem covers it.",
+   "expectations": [
+    "The skill does not trigger"
+   ],
+   "negative": true
+  },
+  {
+   "id": 3,
+   "prompt": "Red-team this: we will cut the free tier from 20 games a day to 5 next week so more players upgrade.",
+   "expected_output": "A short report; no padding.",
+   "expectations": [
+    "Keeps only the kill-assumptions that survive self-refutation, even if fewer than three",
+    "Invents no weakness the plan does not have"
+   ]
+  }
+ ]
+}

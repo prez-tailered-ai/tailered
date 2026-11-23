@@ -1,0 +1,5 @@
+{"skill_name":"stoppage-to-ownership","evals":[
+{"id":1,"prompt":"A partner source froze on us last week and it's the second time this month. Should we build our own odds feed?","expected_output":"Evidence of real stoppages and own, backup or accept for the smallest step, with downturn cost, exit and advice.","expectations":["Looks for dated stoppage evidence before recommending","Weighs a backup before full ownership","States downturn cost, exit and advice for its choice","Spends nothing and leaves the decision to the owner"]},
+{"id":2,"prompt":"Should we bring hosting in-house? It feels like providers keep letting us down, though I can't point to specifics.","expected_output":"Asks for or searches for evidence; suspected outages are kept out of totals.","expectations":["Does not count unevidenced outages","Says what evidence was found or missing"]},
+{"id":3,"prompt":"The main product odds are frozen right now. Find out why and fix it.","expected_output":"Must not use this skill; this is a live incident.","expectations":["The skill does not trigger"],"negative":true}
+]}

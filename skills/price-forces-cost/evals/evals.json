@@ -1,0 +1,5 @@
+{"skill_name":"price-forces-cost","evals":[
+{"id":1,"prompt":"Backtests on the model builder cost about $2.50 a run right now. I want them at $1. Sim is $1.70, data pull is $0.50, report is $0.30. Sim can't go below $0.60 and the data pull can't go below $0.20. What would it take?","expected_output":"A per-step budget meeting $1 with what each cut gives up.","expectations":["Gives a budget for sim, data pull and report that totals $1","States what each cut gives up","Changes no job or price"]},
+{"id":2,"prompt":"I want the odds capture to cost $5 a month total. Compute has to be at least $9 from the bills. Make that price work.","expected_output":"UNREACHABLE naming compute.","expectations":["Says the target cannot be reached","Names compute as the blocking step"]},
+{"id":3,"prompt":"Is the NCAAF Partner A capture job healthy and within its cost line this hour?","expected_output":"Must not use this skill; capture health covers it.","expectations":["The skill does not trigger"],"negative":true}
+]}

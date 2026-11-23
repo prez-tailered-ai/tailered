@@ -1,0 +1,5 @@
+{"skill_name":"walking-time-audit","evals":[
+{"id":1,"prompt":"Where did the time go in my last long session? I feel like it keeps re-reading the same files. Look at the transcript and tell me what to fix.","expected_output":"Shares of gather, wait and work, repeated reads, and three slides.","expectations":["Runs the transcript script","Reports the shares with the sample","Names repeated reads","Proposes one fix per top cost","Prints no command text"]},
+{"id":2,"prompt":"The nightly job has these steps: read rows 40s, wait for lock 120s, compute 30s, write 10s. How much of it is wasted motion?","expected_output":"Step-based split with wait as the largest cost.","expectations":["Uses step times","Names the lock wait as the top cost"]},
+{"id":3,"prompt":"Grade how well this session handled the release, with a score.","expected_output":"Must not use this skill.","expectations":["The skill does not trigger"],"negative":true}
+]}

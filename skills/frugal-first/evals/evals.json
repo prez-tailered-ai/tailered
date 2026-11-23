@@ -1,0 +1,5 @@
+{"skill_name":"frugal-first","evals":[
+{"id": 1, "prompt": "We should buy the $2,000 a month premium odds feed.", "expected_output": "A frugal-first check before the spend.", "expectations": ["Asks what the existing feeds already cover", "Finds the cheapest test of whether the new feed changes results", "Puts the cost per member or per month in view", "Does not cut a check that protects members or a reviewer"]},
+{"id": 2, "prompt": "Cut our cloud costs this month.", "expected_output": "A spend list with frugal alternatives and protected items.", "expectations": ["Lists the actual spend lines first", "Proposes cheaper ways to get the same result", "Names what must not be cut: backups, reviews, member safety", "Ranks by savings"]},
+{"id": 3, "prompt": "What should we charge for the Pro plan?", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

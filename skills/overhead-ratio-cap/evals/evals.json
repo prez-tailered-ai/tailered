@@ -1,0 +1,36 @@
+{
+ "skill_name": "overhead-ratio-cap",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "What does our back office cost as a share of everything we spend? Keep the offices plain.",
+   "expected_output": "An overhead ratio against a cap.",
+   "expectations": [
+    "Splits every cost into member-facing and overhead with dollars",
+    "Gives the ratio and a cap, real or marked proposal",
+    "Marks each overhead line keep, change or stop with savings",
+    "Leaves pay, gain shares and member-facing accuracy untouched"
+   ]
+  },
+  {
+   "id": 2,
+   "prompt": "Agent tokens and dashboards now cost more than the odds feeds. Is that a problem?",
+   "expected_output": "A ratio check that cuts overhead only.",
+   "expectations": [
+    "Classes agent tokens and dashboards as overhead",
+    "Compares the ratio with the cap",
+    "Proposes plainer versions with monthly savings",
+    "Cancels nothing and names an owner per change"
+   ]
+  },
+  {
+   "id": 3,
+   "prompt": "Should we sign up for a $99 a month odds analytics tool?",
+   "expected_output": "Must not use this skill.",
+   "expectations": [
+    "The skill does not trigger"
+   ],
+   "negative": true
+  }
+ ]
+}

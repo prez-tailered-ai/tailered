@@ -1,0 +1,36 @@
+{
+ "skill_name": "floor-visit",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "I haven't looked at the day build in two weeks. Walk the floor and tell me what's in people's way.",
+   "expected_output": "A floor visit ending in one fix.",
+   "expectations": [
+    "Records three first-hand observations from the run log or main product with where each was seen",
+    "Asks the doer what is in their way and records answers in their words",
+    "Picks one fix owned by the work's owner, not the visitor",
+    "Writes no other session's record and sends no message"
+   ]
+  },
+  {
+   "id": 2,
+   "prompt": "Reports say the publishing step is fine. Go see it yourself.",
+   "expected_output": "A visit to the work, not the report.",
+   "expectations": [
+    "Looks at the work itself rather than the summary",
+    "Asks the session through its owner or the queue, not by editing its record",
+    "Marks each answer fix, watch or drop",
+    "Drafts a note to the doer without sending it"
+   ]
+  },
+  {
+   "id": 3,
+   "prompt": "Who should be the first members to try the new NHL model?",
+   "expected_output": "Must not use this skill.",
+   "expectations": [
+    "The skill does not trigger"
+   ],
+   "negative": true
+  }
+ ]
+}

@@ -1,0 +1,5 @@
+{"skill_name":"labs-opt-in","evals":[
+{"id": 1, "prompt": "Let a few members try the new NCAAM player-impact view before it's done.", "expected_output": "A labeled, opt-in, capped Labs plan with an end date.", "expectations": ["Writes the job sentence first", "Sets a Labs label, opt-in and off switch, with no price", "Sets a member cap, an end date and one number with a target", "Routes turning it on through tailered-ai:workflow and the release coordinator on the owner's word"]},
+{"id": 2, "prompt": "We've had the beta alerts on for all NBA members for two months. Is that fine?", "expected_output": "Finds a test with no label, opt-in or end date and fixes it.", "expectations": ["Flags that it is on by default for everyone", "Moves it to opt-in with a label", "Sets an end date and a cap now", "Ends with graduate, change or close and an owner"]},
+{"id": 3, "prompt": "Members keep asking for a parlay builder. Should we build one?", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

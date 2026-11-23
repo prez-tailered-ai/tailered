@@ -1,0 +1,36 @@
+{
+ "skill_name": "gain-share-rule",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "How should the people working on the company share in gains if we grow? Write the rule.",
+   "expected_output": "A written gain-sharing rule with a worked example.",
+   "expectations": [
+    "Lists everyone who does the work with their current pay basis",
+    "Defines the gain from a recorded number with a pool percentage, real or marked proposal",
+    "Writes a rule of ten lines or fewer, paid on top of pay and in cash first",
+    "Shows a worked example on last quarter and leaves the decision with the owner"
+   ]
+  },
+  {
+   "id": 2,
+   "prompt": "Our contractor asked what she gets if the company takes off. Can I promise her 5% of profits?",
+   "expected_output": "A rule before any promise.",
+   "expectations": [
+    "Does not promise or send anything to the contractor",
+    "Writes the rule for everyone doing the work, not one person",
+    "Tests the 5% on last quarter's or proposal figures",
+    "Names a lawyer or accountant to review before signing"
+   ]
+  },
+  {
+   "id": 3,
+   "prompt": "What revenue share should Creator A get so he doesn't leave the creator marketplace?",
+   "expected_output": "Must not use this skill.",
+   "expectations": [
+    "The skill does not trigger"
+   ],
+   "negative": true
+  }
+ ]
+}

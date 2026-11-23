@@ -1,0 +1,5 @@
+{"skill_name":"memo-not-slides","evals":[
+{"id": 1, "prompt": "I want to change the publishing-step rule so we only publish games with an edge over 3 points. Make the case.", "expected_output": "A one-page narrative memo before the change.", "expectations": ["Writes prose paragraphs, not a slide outline or bullets alone", "States the question, the facts with their sources, the options and a recommendation", "Says what evidence would change the recommendation", "Fits on one page and names who decides"]},
+{"id": 2, "prompt": "Put together slides on changing the NHL model's goalie adjustment for tomorrow's review.", "expected_output": "A one-page memo first; slides only if still wanted.", "expectations": ["Writes the one-page memo before any slides", "Says why: the change is to the model", "Keeps numbers sourced or marked unknown", "Leaves time for the memo to be read before discussion"]},
+{"id": 3, "prompt": "Write the instruction file for a new agent that tags injury news.", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

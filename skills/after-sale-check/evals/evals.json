@@ -1,0 +1,5 @@
+{"skill_name":"after-sale-check","evals":[
+{"id":1,"prompt":"Are people who subscribed on the creator marketplace actually getting what they paid for? Check every paid path.","expected_output":"A plan or table covering each paid path, read-only, with pass, fail or unmeasured and a fix per fail.","expectations":["Uses the signed-in owner profile read-only","Never clicks pay or Subscribe","Treats unreachable paths as unmeasured, not passed","Names a fix and owner per fail"]},
+{"id":2,"prompt":"We just released a change to paid access. Do the supporters and subscribers still get the right thing?","expected_output":"After-sale check of the pricing page and subscription access.","expectations":["Lists the pricing page and subscriptions","Contacts no member"]},
+{"id":3,"prompt":"Check the sidebar and account menu on the main product after last night's release.","expected_output":"Must not use this skill; the labs browser shell check covers it.","expectations":["The skill does not trigger"],"negative":true}
+]}

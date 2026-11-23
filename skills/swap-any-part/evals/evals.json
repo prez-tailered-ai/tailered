@@ -1,0 +1,5 @@
+{"skill_name":"swap-any-part","evals":[
+{"id": 1, "prompt": "Our odds captures sit in a vendor's managed time-series database at $350 a month. Are we locked in?", "expected_output": "Prices the part with its hours, tests the swap, and decides.", "expectations": ["Lists the part with seller and monthly cost", "Adds the hours it takes to the full cost", "Says whether the data can leave in a standard format and names a standard swap with its full cost", "Ends with keep, change or stop and an owner, testing any move on a scratch copy"]},
+{"id": 2, "prompt": "Pick the parts for the NHL day build on one server. Keep it cheap.", "expected_output": "Chooses standard parts more than one seller offers, priced in full.", "expectations": ["Lists each part with seller and cost or marked proposals", "Counts run hours at a rate", "Marks each part standard or one-seller", "Routes the live change through tailered-ai:workflow and the release coordinator on the owner's word"]},
+{"id": 3, "prompt": "Should we pay $400 a month for a new odds data API at all?", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}

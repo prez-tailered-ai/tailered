@@ -1,0 +1,5 @@
+{"skill_name":"mechanism-not-intention","evals":[
+{"id": 1, "prompt": "The day build published stale odds again. Everyone just needs to be more careful about checking freshness.", "expected_output": "A mechanism replacing the promise to be careful.", "expectations": ["Rejects 'be more careful' as the fix", "Proposes a check that runs every time without anyone remembering", "Names an owner and how the check is inspected", "Names the failure it prevents and when to drop it if it never catches anything"]},
+{"id": 2, "prompt": "Third time this month someone symlinked a release folder. What do we do?", "expected_output": "A mechanism, not a reminder.", "expectations": ["Proposes an automatic block or check, not a note or reminder", "Says where it runs and who owns it", "Says how anyone will know it is working", "Keeps it to one mechanism, not a new process"]},
+{"id": 3, "prompt": "Why does this test fail with a KeyError on 'espnId'?", "expected_output": "Must not use this skill.", "expectations": ["The skill does not trigger"], "negative": true}
+]}
